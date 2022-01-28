@@ -70,6 +70,13 @@ img {
   line-height: 45px;
 }
 
+.section-subtitle {
+  color: #000;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+}
+
 .header {
   padding: 20px;
 }
@@ -405,7 +412,7 @@ img {
 @media (max-width: 768px) {
   .offer__contact {
     text-align: start;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -429,7 +436,7 @@ img {
 @media (max-width: 768px) {
   .offer-callus {
     text-align: start;
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -479,6 +486,125 @@ img {
 
 .slider__image {
   margin: auto;
+}
+
+.price {
+  padding: 100px 0;
+}
+
+@media (max-width: 800px) {
+  .price {
+    padding: 50px 0;
+  }
+}
+
+.price__title {
+  margin-bottom: 60px;
+}
+
+.price__subtitle {
+  margin-bottom: 60px;
+}
+
+.price__card {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .price__card {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card__image::before {
+  opacity: 1;
+}
+
+.card__text {
+  padding: 40px 0;
+}
+
+.card__title {
+  margin-top: 0;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image img {
+  display: block;
+}
+
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.card__title {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.card__link {
+  display: inline-block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.card__link:hover::after {
+  height: 13px;
+}
+
+.card__link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .modal {
