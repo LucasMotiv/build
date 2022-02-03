@@ -280,6 +280,7 @@ img
 
     &__title
         margin-bottom: 60px
+        font-size: 30px
     &__subtitle
         margin-bottom: 60px
     &__card
@@ -342,6 +343,203 @@ img
             height: 3px
             background-color: $main-color
             transition: .2s
+
+
+.steps
+    padding-bottom: 120px
+    @media (max-width: 800px)
+        padding-bottom: 80px
+    &__title
+        margin-bottom: 60px
+        @media (max-width: 400px)
+            margin-top: 0
+            margin-bottom: 25px
+            font-size: 18px
+            line-height: normal
+            font-weight: 400
+    &__subtitle
+        margin-bottom: 75px
+        @media (max-width: 400px)
+            margin-top: 0
+            font-size: 14px
+            font-weight: 400
+            line-height: 45px
+
+.icons
+    display: flex
+    justify-content: space-between
+    @media (max-width: 800px)
+        flex-wrap: wrap
+
+.icon
+    text-align: center
+    position: relative
+    @media (max-width: 800px)
+        width: 100%
+    &:last-child
+        &::after
+            display: none
+    &::after
+        content: ''
+        position: absolute
+        top: -10px
+        right: -95px
+        display: block
+        width: 72px
+        height: 25px
+        background-image: url('../img/iconArrowRight.png')
+        @media (max-width: 1200px)
+            display: none
+        &:last-child
+            display: none
+    &__image
+        height: 100px
+        width: 100px
+        margin: auto
+        border: 3px solid $main-color
+        background: #fff
+        border-radius: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 30px
+        @media (max-width: 640px)
+            margin-bottom: 20px
+        img
+            width: 30px
+            height: 30px
+            display: inline-block
+    &__text
+        max-width: 140px
+        display: inline-block
+        font-size: 14px
+        line-height: 20px
+        @media (max-width: 800px)
+            margin-bottom: 30px
+            max-width: 100%
+
+        @media (max-width: 400px)
+            margin-bottom: 30px
+            font-size: 12px
+            line-height: 16px
+            max-width: 120px
+
+
+.notice
+    background-color: $second
+    padding: 100px 0
+    @media (max-width: 400px)
+        padding-top: 75px
+    &__text
+        text-align: center
+        font-size: 32px
+        max-width: 750px
+        margin: auto
+        line-height: 50px
+        font-weight: 300    
+        @media (max-width: 400px)
+            font-size: 18px
+            line-height: normal
+            font-weight: 400
+            max-width: 270px
+
+.info
+    padding: 100px 0
+    @media (max-width: 400px)
+        padding: 60px 0
+    &__block
+        margin-bottom: 150px
+        @media (max-width: 900px)
+            margin-bottom: 80px
+        
+
+.benefits
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width:400px)
+        background-image: url('../img/background-benefit.jpg')
+        background-position: left bottom
+        background-size: contain
+        position: relative
+
+.benefit
+
+    background-color: $benefit-bg
+    height: 410px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 370px
+    position: relative
+    @media (max-width:1200px)
+        width: 1170px
+        max-width: 100%
+        margin: auto
+        margin-bottom: 30px
+    @media (max-width:400px)
+        height: 360px
+    @media (max-width:320px)
+        height: 320px
+    &__image
+        position: absolute
+        bottom: 0
+        left: 0
+    &__text
+        margin: 26px 100px 0 26px
+        font-size: 16px
+        line-height: 23px
+        @media (max-width: 400px)
+            margin: 20px 70px 0px 20px
+            font-size: 12px
+            line-height: 16.83px
+            font-weight: 400
+        strong
+            +bold
+    
+
+.documents__title
+    margin-bottom: 100px
+    @media (max-width: 900px)
+        margin-bottom: 90px
+    @media (max-width: 400px)
+        margin-bottom: 90px
+        font-size: 18px
+        font-weight: 400
+        line-height: normal
+
+.documents-block
+    display: flex
+    justify-content: space-between
+    @media (max-width: 900px)
+        flex-wrap: wrap
+    &__text
+        text-align: center
+        margin-top: 40px
+        line-height: 24px
+        font-size: 18px
+        @media (max-width: 900px)
+            margin: auto
+            margin-bottom: 45px
+        @media (max-width: 400px)
+            font-size: 14px
+            font-weight: 400
+            line-height: normal
+            margin-bottom: 45px
+    &__item
+        @media (max-width: 900px)
+            flex-wrap: wrap
+            display: flex
+            width: 100%
+    &__image
+        @media (max-width: 900px)
+            width: 100%
+        @media (max-width: 900px)
+            margin-bottom: 30px
+    &__image img
+        @media (max-width: 900px)
+            display: flex
+            margin: auto
 
 
 .modal

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     
 </head>
@@ -15,15 +16,15 @@
     <header class="header">
         <div class="container">
             <div class="header-block">
-                <div class="header__logo">
+                <div class="header__logo animate__animated animate__fadeInLeft">
                     <img src="img/logo.png" alt="logo">
                 </div>
                 <div class="header__info">
-                    <div class="header__contacts">
+                    <div class="header__contacts animate__animated animate__fadeInRight">
                         <span class="header__address">Praha</span>
                         <a href="tel:+420777167699" class="header__phone">+420 777 167 699</a>
                     </div>
-                    <button class="button header__button" id="button" id="button">Zavolejte mi</button>
+                    <button class="button header__button animate__animated animate__fadeInRight" id="button" id="button">Zavolejte mi</button>
                 </div>
             </div>
         </div>
@@ -34,21 +35,21 @@
         <section class="main">
             <div class="container">
                 <div class="main-block">
-                    <div class="main-text">
-                        <h1 class="main-text__title">Dekorace vnitřních prostorů "na klíč"</h1>
-                            <span class="main-text__subtitle">se zárukou kvality stanovené ve smlouvě</span>
+                    <div class="main-text animate__animated animate__fadeInLeft">
+                        <h1 class="main-text__title" data-wow-delay="1s">Dekorace vnitřních prostorů "na klíč"</h1>
+                            <span class="main-text__subtitle" data-wow-delay=".2s">se zárukou kvality stanovené ve smlouvě</span>
                             <ul class="main-list">
-                                <li class="main-list__item">
+                                <li class="main-list__item" data-wow-delay=".3s">
                                     <div class="main-list__image"><img src="img/clock.png" alt="Hodiny">
                                     </div>
                                     <span class="main-list__text">Přesně dodržujeme termíny</span>
                                 </li>
-                                <li class="main-list__item">
+                                <li class="main-list__item" data-wow-delay=".4s">
                                     <div class="main-list__image"><img src="img/calculator.png" alt="Kalkulátor">
                                     </div>
                                     <span class="main-list__text">Vypočítáme náklady práce a materiálů ve stejný den poptávky</span>
                                 </li>
-                                <li class="main-list__item">
+                                <li class="main-list__item" data-wow-delay=".5s">
                                     <div class="main-list__image"><img src="img/paint.png" alt="Paleta">
                                     </div>
                                     <span class="main-list__text">Nabídneme vám více než 100 možností provedení designu vašeho bydlení</span>
@@ -57,7 +58,7 @@
                             </ul>
                             </h1>
                     </div>
-                    <div class="main-image">
+                    <div class="main-image animate__animated animate__fadeInRight">
                         <img src="img/main-image.png" alt="Rozpoložení bytu">
                     </div>
                 </div>
@@ -67,22 +68,22 @@
         <section class="offer">
             <div class="container">
                 <div class="offer-block">
-                    <h2 class="offer-title">
+                    <h2 class="offer-title animate__animated animate__fadeInLeft">
                         Bezplatně vypracujeme design-projekt pro Váš domov a realizujeme ho!
                     </h2>
-                    <span class="offer-subtitle">Zanechte poptávku pro vypracování bezplatného design-projektu!
+                    <span class="offer-subtitle animate__animated animate__fadeInLeft">Zanechte poptávku pro vypracování bezplatného design-projektu!
                         </span>
                     <form action="#" class="form offer__form">
-                        <input type="text" class="input offer__input" placeholder="Vaše jméno">
-                        <input type="tel" class="input offer__input" placeholder="Váš telefon">
-                        <button class="button offer__button">
+                        <input type="text" class="input offer__input animate__animated animate__fadeInLeft" placeholder="Vaše jméno">
+                        <input type="tel" class="input offer__input animate__animated animate__fadeInRight" placeholder="Váš telefon">
+                        <button class="button offer__button animate__animated animate__fadeInUp">
                             Získejte bezplatný design-projekt
                         </button>
                     </form>
                     <div class="contact offer-contact">
-                        <span class="contact offer__contact">Náš manažer vám zavolá v průběhu 60 sekund
+                        <span class="contact offer__contact animate__animated animate__fadeInLeft">Náš manažer vám zavolá v průběhu 60 sekund
                         </span>
-                        <div class="callus offer-callus">
+                        <div class="callus offer-callus animate__animated animate__fadeInRight">
                             <span class="callus offer__callus">nebo nám zavolejte sami</span>
                             <a href="tel:+420777167699" class="offer__phone">+420 777 167 699</a>
                         </div>
@@ -93,11 +94,11 @@
 
         <section class="portfolio">
             <div class="container">
-                <h2 class="section-title portfolio__title">
+                <h2 class="section-title portfolio__title animate__animated animate__fadeInDown" data-wow-delay="5s">
                     Za dobu práce od roku 2007, <br> jsme realizovali více než 500 oprav bytů a domů
                 </h2>
 
-                <div class="slider">
+                <div class="slider animate__animated animate__fadeInDown">
                     <div class="slider__item"><img class="slider__image" src="img/portfolio1.jpg" alt="Obrázek 1"></div>
                     <div class="slider__item"><img class="slider__image" src="img/portfolio2.jpg" alt="Obrázek 2"></div>
                     <div class="slider__item"><img class="slider__image" src="img/portfolio3.jpg" alt="Obrázek 3"></div>
@@ -106,10 +107,10 @@
                     <div class="slider__item"><img class="slider__image" src="img/portfolio3.jpg" alt="Obrázek 6"></div>
                 </div>
                 <div class="arrows portfolio__arrows">
-                    <div class="arrows__left">
+                    <div class="arrows__left animate__animated animate__fadeInLeft">
                         <img src="img/arrow-left.png" alt="">
                     </div>
-                    <div class="arrows__right">
+                    <div class="arrows__right animate__animated animate__fadeInRight">
                         <img src="img/arrow-right.png" alt="">
                     </div>
                 </div>
@@ -121,7 +122,7 @@
                 <h2 class="section-title price__title">Máme velmi flexibilní systém slev <br> pro komplexní práce!</h2>
                 <span class="section-subtitle price__subtitle">Ceny za naše služby</span>
                 <div class="cards">
-                   <div class="card price__card">
+                   <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                        <div class="card__image">
                            <img src="img/price1.jpg" alt="Koupelna">
                        </div>
@@ -131,7 +132,7 @@
                        </div>
                    </div>
 
-                   <div class="card price__card">
+                   <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                     <div class="card__image">
                         <img src="img/price2.jpg" alt="Pokoje a apartmány">
                     </div>
@@ -141,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="card price__card">
+                <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
                     <div class="card__image">
                         <img src="img/price3.jpg" alt="Kanceláře">
                     </div>
@@ -151,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="card price__card">
+                <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".4s">
                     <div class="card__image">
                         <img src="img/price6.jpg" alt="Rekonstrukce v nových budovách">
                     </div>
@@ -161,7 +162,7 @@
                     </div>
                 </div>
 
-                <div class="card price__card">
+                <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
                     <div class="card__image">
                         <img src="img/price5.jpg" alt="Kuchyně">
                     </div>
@@ -171,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="card price__card">
+                <div class="card price__card wow animate__animated animate__fadeInUp" data-wow-delay=".6s">
                     <div class="card__image">
                         <img src="img/price4.jpg" alt="Chaty a chalupy">
                     </div>
@@ -183,6 +184,134 @@
                 </div>
             </div>
         </section>
+
+        <section class="steps">
+            <div class="container">
+                <h2 class="section-title steps__title">Naši experti jsou připraveni k změření <br> kdykoli se Vám to hodí</h2>
+                <span class="section-subtitle steps__subtitle">5 kroků k renovaci</span>
+
+                <div class="icons">
+                    <div class="icon">
+                        <div class="icon__image">
+                            <img src="img/icon1.jpg" alt="Ikona 1">
+                        </div>
+                        <span class="icon__text">
+                            Voláte nám nebo zanecháváte požadavek
+                        </span>
+                    </div>
+
+                    <div class="icon">
+                        <div class="icon__image">
+                            <img src="img/icon2.jpg" alt="Ikona 2">
+                        </div>
+                        <span class="icon__text">
+                            Dohodneme se na čase pro změření vašeho objektu
+                        </span>
+                    </div>
+
+                    <div class="icon">
+                        <div class="icon__image">
+                            <img src="img/icon3.jpg" alt="Ikona 3">
+                        </div>
+                        <span class="icon__text">
+                            Vypočítáme rozpočet a schválíme ho s vámi
+                        </span>
+                    </div>
+
+                    <div class="icon">
+                        <div class="icon__image">
+                            <img src="img/icon4.jpg" alt="Ikona 4">
+                        </div>
+                        <span class="icon__text">
+                            Podepíšeme smlouvu a nakoupíme materiál za výhodnou cenu
+                            
+                        </span>
+                    </div>
+
+                    <div class="icon">
+                        <div class="icon__image">
+                            <img src="img/icon5.jpg" alt="Ikona 5">
+                        </div>
+                        <span class="icon__text">
+                            Provádíme opravy v uvedeném termínu
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="notice">
+            <div class="container">
+                <h2 class="notice__text">Oprava Vás bude stát levněji, protože používáme kvalitní materiály za velkoobchodní ceny</h2>
+            </div>
+        </section>
+
+
+        <section class="info">
+            <div class="container">
+                <div class="benefits info__block">
+                    <div class="benefit">
+                        <span class="benefit__text">Pomůžeme vám zakoupit veškeré materiály za velkoobchodní ceny u pro prověřených dodavatelů
+                        </span>
+                    <img class="benefit__image" src="img/benefit1.png" alt="Benefit 1">
+                    </div>
+
+                    <div class="benefit">
+                        <span class="benefit__text">Uděláme Vám <strong>maximální slevu</strong> u našich partnerů na nákup materiálů
+                            
+                        </span>
+                    <img class="benefit__image" src="img/benefit2.png" alt="Benefit 2">
+                    </div>
+
+                    <div class="benefit">
+                        <span class="benefit__text">Vše, co nedokážete najít v obchodech - pomůžeme objednat <strong>u prověřených dodavatelů</strong>
+                            
+                        </span>
+                    <img class="benefit__image" src="img/benefit3.png" alt="Benefit 3">
+                    </div>
+                </div>
+
+            <div class="documents">
+                <h2 class="section-title documents__title">Všechny naše povinnosti jsou <br> detailně propsané ve smlouvě
+                    </h2>
+                    <div class="documents-block">
+                        <div class="documents-block__item">
+                            <div class="documents-block__image">
+                                <img src="img/doc1.png" alt="Dokument 1">
+                            </div>
+                            <div class="documents-block__text">
+                                Záruka kvality <br> provedené práce
+                            </div>
+                        </div>
+                        
+
+                        <div class="documents-block__item">
+                            <div class="documents-block__image">
+                                <img src="img/doc2.png" alt="Dokument 2">
+                            </div>
+                            <div class="documents-block__text">
+                                Záruka na fixované ceny <br> Druhy práce a jejich ceny <br> jsou propsané ve smlouvě
+                            </div>
+                        </div>
+                        
+
+                        <div class="documents-block__item">
+                            <div class="documents-block__image">
+                                <img src="img/doc3.png" alt="Dokument 3 ">
+                            </div>
+                            <div class="documents-block__text">
+                                Garance na přesné dodržení <br> termínů a zodpovědnosti <br> za nesplnění
+                                
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+            </div>
+        </section>
+
     </main>
 
     <div class="modal" id="modal">
@@ -195,6 +324,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
