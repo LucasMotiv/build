@@ -28,6 +28,36 @@ $(document).ready(function(){
     });
 
 
+    // Validace formulářů
+
+    $('#brief-form').validate({
+      rules: {
+        username:"required",
+        phone: {
+          required: true,
+          minlength: 9,
+          phone: true
+          
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        username: "Uveďte vaše jméno",
+        phone: {
+          required: "Potřebujeme váš telefon",
+          minlength: jQuery.validator.format("Je potřeba napsat alespoň 9 znaků!")
+        },
+        email: {
+          required: "Potřebujeme váš email",
+          email: "Vaše e-mailová adresa musí být ve formátu jmeno@domena.cz"
+        }
+      }
+    });
+
+
     // Napojení slideru
     $('.slider').slick({
         slidesToShow: 3,
